@@ -9,7 +9,7 @@ function addToZero(arr){
     return false
 }
 
-//Runtime of addToZero: Probably like a few microseconds. Super-duper fast.
+//Runtime of addToZero: O(n^2).
 
 function uniqueChars(str){
     for (let i = 0; i < str.length; i++){
@@ -22,7 +22,7 @@ function uniqueChars(str){
     return true
 }
 
-//Runtime of uniqueChars: Built almost identically to addToZero, so probably the same?
+//Runtime of uniqueChars: O(n^2)
 
 function pangramCheck(str){
     let alphabet = [`a`, `b`, `c`, `d`, `e`, `f`, `g`, `h`, `i`, `j`, `k`, `l`, `m`, `n`, `o`, `p`, `q`, `r`, `s`, `t`, `u`, `v`, `w`, `x`, `y`, `z`];
@@ -31,7 +31,7 @@ function pangramCheck(str){
     return check
 }
 
-//Runtime of pangramCheck: Still just iterating through one string, so probably similar to the above functions.
+//Runtime of pangramCheck: O(n)
 
 function longestWord(arr){
     let longest = arr[0].length;
@@ -43,4 +43,4 @@ function longestWord(arr){
     return longest
 }
 
-//Runtime of longestWord: Same as the others.
+//Runtime of longestWord: O(n)
